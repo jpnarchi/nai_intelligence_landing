@@ -462,7 +462,7 @@ const HeroSection: React.FC = () => {
               }}
             >
               <span className="text-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300">
-                <span className="inline-block">NAI</span> <span className="inline-block">Intelligence</span>
+                <span className="inline-block">NAI -</span> <span className="inline-block">Intelligence</span>
               </span>
             </h1>
           </div>
