@@ -29,7 +29,7 @@ html {
 
 /* Shadow glow for hover effects */
 .hover\:shadow-glow:hover {
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.7);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.7);
 }
 
 /* Neon effect */
@@ -128,7 +128,7 @@ html {
     transform: translateY(-100%) rotate(30deg);
   }
   to {
-    transform: translateY(100%) rotate(30deg);
+    transform: translateY(100%) rotate(30 deg);
   }
 }
 
@@ -833,4 +833,53 @@ html {
   p {
     font-size: 1rem !important;
   }
+}
+
+/* Enhanced card styles for About section */
+.about-card {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.about-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.about-card-icon {
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.about-card:hover .about-card-icon {
+  transform: scale(1.1) translateZ(20px);
+}
+
+.about-card-number {
+  transition: all 0.5s ease;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-card:hover .about-card-number {
+  transform: scale(1.05) translateZ(10px);
+  background: linear-gradient(135deg, #93c5fd, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.about-card-divider {
+  height: 2px;
+  width: 40px;
+  margin: 0.75rem auto;
+  background: linear-gradient(to right, #3b82f6, transparent);
+  transition: all 0.5s ease;
+}
+
+.about-card:hover .about-card-divider {
+  width: 60px;
+  background: linear-gradient(to right, #60a5fa, transparent);
 }
