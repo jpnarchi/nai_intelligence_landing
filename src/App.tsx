@@ -180,7 +180,7 @@ function App() {
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate fade-up">
-            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-4 glow-text">Quiénes Somos</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-4 glow-text">Quiénes Somos</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8 glow"></div>
             <p className="max-w-3xl mx-auto text-lg text-blue-200">
               Startup 100% Mexicana <span className="text-blue-300 font-semibold">NAI Intelligence</span> enfocada a ofrecer servicios de 
@@ -190,16 +190,16 @@ function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center stagger-children">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center stagger-children">
             <div className="glass-effect p-8 rounded-xl shadow-md transform hover:-translate-y-2 transition-all duration-500 float-animation hologram relative overflow-hidden group">
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-500/10 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/10 rounded-full blur-3xl"></div>
               
               <div className="p-3 rounded-full bg-blue-900/50 border border-blue-500/30 glow mx-auto mb-4">
-                <Users className="w-12 h-12 text-blue-300" />
+                <Users className="w-10 h-10 md:w-12 md:h-12 text-blue-300" />
               </div>
-              <h3 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+40</h3>
+              <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+40</h3>
               <p className="text-blue-300 uppercase tracking-wider">Clientes</p>
             </div>
             
@@ -209,9 +209,9 @@ function App() {
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/10 rounded-full blur-3xl"></div>
               
               <div className="p-3 rounded-full bg-blue-900/50 border border-blue-500/30 glow mx-auto mb-4">
-                <Settings className="w-12 h-12 text-blue-300 rotate-slow" />
+                <Settings className="w-10 h-10 md:w-12 md:h-12 text-blue-300 rotate-slow" />
               </div>
-              <h3 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+15</h3>
+              <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+15</h3>
               <p className="text-blue-300 uppercase tracking-wider">Sistemas Automatizados</p>
             </div>
             
@@ -221,9 +221,9 @@ function App() {
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/10 rounded-full blur-3xl"></div>
               
               <div className="p-3 rounded-full bg-blue-900/50 border border-blue-500/30 glow mx-auto mb-4">
-                <Brain className="w-12 h-12 text-blue-300 pulse" />
+                <Brain className="w-10 h-10 md:w-12 md:h-12 text-blue-300 pulse" />
               </div>
-              <h3 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+20</h3>
+              <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+20</h3>
               <p className="text-blue-300 uppercase tracking-wider">Agentes AI</p>
             </div>
             
@@ -233,9 +233,9 @@ function App() {
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/10 rounded-full blur-3xl"></div>
               
               <div className="p-3 rounded-full bg-blue-900/50 border border-blue-500/30 glow mx-auto mb-4">
-                <MessageSquare className="w-12 h-12 text-blue-300" />
+                <MessageSquare className="w-10 h-10 md:w-12 md:h-12 text-blue-300" />
               </div>
-              <h3 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+10</h3>
+              <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+10</h3>
               <p className="text-blue-300 uppercase tracking-wider">Chat Bots</p>
             </div>
           </div>
@@ -285,26 +285,26 @@ function App() {
       <section className="py-20 bg-gradient-to-b from-blue-900 to-blue-950 circuit-pattern transition-all duration-1000 ease-in-out" id="success-cases">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 animate fade-up">
-            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-4">Casos de Éxito</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-4">Casos de Éxito</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8 glow"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 stagger-children">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 stagger-children">
             <div className="glass-effect p-8 rounded-xl shadow-lg scale-transition backdrop-blur-md relative overflow-hidden group">
               {/* Empresa destacada con efecto de brillo */}
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/20 rounded-full blur-3xl"></div>
               
               <div className="mb-6 relative">
-                <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 tracking-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 tracking-tight">
                   CRETUM PARTNERS
                 </h3>
                 <div className="w-full h-0.5 bg-gradient-to-r from-blue-400 to-transparent"></div>
               </div>
               
               <div className="flex items-center mb-4">
-                <Code className="w-8 h-8 text-blue-300 mr-3" />
-                <h4 className="text-xl font-bold text-blue-100">Sistema de Noticias de Emisoras por Correo</h4>
+                <Code className="w-8 h-8 text-blue-300 mr-3 flex-shrink-0" />
+                <h4 className="text-lg md:text-xl font-bold text-blue-100">Sistema de Noticias de Emisoras por Correo</h4>
               </div>
               <p className="text-blue-200 mb-6">
                 Se realizó un modelo de web scraping para automatizar el seguimiento de emisoras en la página web de la Bolsa Mexicana de Valores. 
@@ -323,15 +323,15 @@ function App() {
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/20 rounded-full blur-3xl"></div>
               
               <div className="mb-6 relative">
-                <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 tracking-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 tracking-tight">
                   PRETMEX
                 </h3>
                 <div className="w-full h-0.5 bg-gradient-to-r from-blue-400 to-transparent"></div>
               </div>
               
               <div className="flex items-center mb-4">
-                <Database className="w-8 h-8 text-blue-300 mr-3" />
-                <h4 className="text-xl font-bold text-blue-100">Agente de IA para Optimización de Bases de Datos</h4>
+                <Database className="w-8 h-8 text-blue-300 mr-3 flex-shrink-0" />
+                <h4 className="text-lg md:text-xl font-bold text-blue-100">Agente de IA para Optimización de Bases de Datos</h4>
               </div>
               <p className="text-blue-200 mb-6">
                 Se creó un agente de IA para manipular y gestionar una base de datos conforme el usuario le pide requisitos y búsquedas dentro de ella, 
@@ -349,15 +349,15 @@ function App() {
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/20 rounded-full blur-3xl"></div>
               
               <div className="mb-6 relative">
-                <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 tracking-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 tracking-tight">
                   ASTRA GROWTH
                 </h3>
                 <div className="w-full h-0.5 bg-gradient-to-r from-blue-400 to-transparent"></div>
               </div>
               
               <div className="flex items-center mb-4">
-                <Phone className="w-8 h-8 text-blue-300 mr-3" />
-                <h4 className="text-xl font-bold text-blue-100">Asistente de IA para Reservas a través de WhatsApp</h4>
+                <Phone className="w-8 h-8 text-blue-300 mr-3 flex-shrink-0" />
+                <h4 className="text-lg md:text-xl font-bold text-blue-100">Asistente de IA para Reservas a través de WhatsApp</h4>
               </div>
               <p className="text-blue-200 mb-6">
                 Se creó un agente de IA para automatizar la gestión de reservas a través de WhatsApp donde el agente al recibir la reserva 
@@ -375,15 +375,15 @@ function App() {
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/20 rounded-full blur-3xl"></div>
               
               <div className="mb-6 relative">
-                <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 tracking-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 tracking-tight">
                   NOKTOS
                 </h3>
                 <div className="w-full h-0.5 bg-gradient-to-r from-blue-400 to-transparent"></div>
               </div>
               
               <div className="flex items-center mb-4">
-                <Globe className="w-8 h-8 text-blue-300 mr-3" />
-                <h4 className="text-xl font-bold text-blue-100">Plataforma para Clientes con Agente de IA</h4>
+                <Globe className="w-8 h-8 text-blue-300 mr-3 flex-shrink-0" />
+                <h4 className="text-lg md:text-xl font-bold text-blue-100">Plataforma para Clientes con Agente de IA</h4>
               </div>
               <p className="text-blue-200 mb-6">
                 Construimos una plataforma donde el usuario puede completar una reserva de hotel en 3 pasos a través de un chat bot 
@@ -411,7 +411,7 @@ function App() {
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate fade-up">
-            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-4">Contáctanos</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-4">Contáctanos</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8 glow"></div>
             <p className="max-w-2xl mx-auto text-lg text-blue-200 mb-10">
               Estamos listos para ayudarte a transformar tu negocio con soluciones de IA personalizadas
@@ -536,75 +536,25 @@ function App() {
               </form>
               
               <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 text-center md:text-left stagger-children">
-                <div className="flex flex-col md:flex-row items-center md:items-start group hover:transform hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="bg-blue-800/30 p-3 rounded-full mb-4 md:mb-0 md:mr-4 glow group-hover:scale-110 transition-transform duration-300">
+                <div className="flex flex-col md:flex-row items-center md:items-start">
+                  <div className="bg-blue-800/30 p-3 rounded-full mb-4 md:mb-0 md:mr-4 glow">
                     <Mail className="w-6 h-6 text-blue-300" />
                   </div>
                   <div>
                     <h3 className="text-blue-100 font-medium mb-1">Correo Electrónico</h3>
-                    <p className="text-blue-300 hover:text-blue-200 transition-colors">
-                      <a href="mailto:nai@naintelligence.mx" className="border-b border-blue-500/30 hover:border-blue-400 transition-colors">
-                        nai@naintelligence.mx
-                      </a>
-                    </p>
+                    <a href="mailto:nai@naintelligence.mx" className="text-blue-300 hover:text-blue-200 transition-colors">nai@naintelligence.mx</a>
                   </div>
                 </div>
                 
-                <div className="flex flex-col md:flex-row items-center md:items-start group hover:transform hover:translate-y-[-5px] transition-all duration-300">
-                  <div className="bg-blue-800/30 p-3 rounded-full mb-4 md:mb-0 md:mr-4 glow group-hover:scale-110 transition-transform duration-300">
+                <div className="flex flex-col md:flex-row items-center md:items-start">
+                  <div className="bg-blue-800/30 p-3 rounded-full mb-4 md:mb-0 md:mr-4 glow">
                     <Phone className="w-6 h-6 text-blue-300" />
                   </div>
                   <div>
                     <h3 className="text-blue-100 font-medium mb-1">Teléfono</h3>
-                    <p className="text-blue-300">
-                      <a href="tel:+525576673059" className="border-b border-blue-500/30 hover:border-blue-400 transition-colors hover:text-blue-200">
-                        +52 55 7667 3059
-                      </a>
-                      {" / "}
-                      <a href="tel:+525543431170" className="border-b border-blue-500/30 hover:border-blue-400 transition-colors hover:text-blue-200">
-                        +52 55 4343 1170
-                      </a>
-                    </p>
+                    <a href="tel:+525576673059" className="text-blue-300 hover:text-blue-200 transition-colors">+52 55 7667 3059</a> / <a href="tel:+525543431170" className="text-blue-300 hover:text-blue-200 transition-colors">+52 55 4343 1170</a>
                   </div>
                 </div>
-              </div>
-              
-              {/* Social Media Links */}
-              <div className="mt-8 flex justify-center space-x-6">
-                <a 
-                  href="https://www.linkedin.com/company/nai-intelligence" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-blue-800/30 p-3 rounded-full glow hover:scale-110 transition-all duration-300"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-300">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg>
-                </a>
-                <a 
-                  href="https://twitter.com/nai_intelligence" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-blue-800/30 p-3 rounded-full glow hover:scale-110 transition-all duration-300"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-300">
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                  </svg>
-                </a>
-                <a 
-                  href="https://www.instagram.com/nai.intelligence/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-blue-800/30 p-3 rounded-full glow hover:scale-110 transition-all duration-300"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-300">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
