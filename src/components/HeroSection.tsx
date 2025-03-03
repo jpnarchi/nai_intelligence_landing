@@ -436,16 +436,16 @@ const HeroSection: React.FC = () => {
       <div className="absolute bottom-0 left-0 right-0 h-[300px] perspective-floor opacity-20"></div>
       
       {/* Main content */}
-      <div ref={containerRef} className="container mx-auto px-6 py-16 z-10 relative perspective-1000">
+      <div ref={containerRef} className="container mx-auto px-4 md:px-6 py-16 z-10 relative perspective-1000">
         <div className="flex flex-col items-center text-center">
           {/* 3D Logo with glow effect */}
-          <div className="flex items-center mb-12 reveal">
+          <div className="flex items-center mb-8 md:mb-12 reveal">
             <div className="relative transform-gpu transition-all duration-700 hover:scale-110">
               <div className="absolute inset-0 bg-blue-500 rounded-full blur-xl opacity-30 animate-pulse transition-all duration-700"></div>
               <div className="brain-container">
                 {/* Improved Brain SVG with explicit dimensions and styling */}
                 <Brain 
-                  className="w-24 h-24 text-blue-400 mr-3 glow-pulse transition-all duration-700 brain-3d" 
+                  className="w-16 h-16 md:w-24 md:h-24 text-blue-400 mr-3 glow-pulse transition-all duration-700 brain-3d" 
                   size={96} 
                   strokeWidth={1.5}
                 />
@@ -456,7 +456,7 @@ const HeroSection: React.FC = () => {
             {/* 3D Text with hover effect */}
             <h1 
               ref={titleRef} 
-              className="text-5xl md:text-7xl font-bold text-white transition-all duration-700 transform-gpu title-3d ml-4"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold text-white transition-all duration-700 transform-gpu title-3d ml-4"
               style={{
                 textShadow: '0 0 20px rgba(59, 130, 246, 0.7), 0 0 40px rgba(59, 130, 246, 0.4)'
               }}
@@ -468,7 +468,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           {/* Enhanced subtitle with full visibility */}
-          <div className="mb-12 w-full max-w-3xl mx-auto">
+          <div className="mb-8 md:mb-12 w-full max-w-3xl mx-auto">
             <div 
               ref={subtitleRef}
               className="text-xl md:text-2xl font-light text-blue-200 fade-in-text glow-text transition-all duration-700"
@@ -481,7 +481,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           {/* Enhanced feature badges */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 w-full max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8 md:mb-12 w-full max-w-3xl mx-auto">
             {[
               { icon: <Brain className="w-5 h-5" />, text: "IA Avanzada" },
               { icon: <Zap className="w-5 h-5" />, text: "Automatización" },
@@ -490,28 +490,28 @@ const HeroSection: React.FC = () => {
             ].map((feature, index) => (
               <div 
                 key={index} 
-                className="feature-badge glass-effect px-4 py-3 rounded-full flex items-center justify-center gap-2 text-blue-200 backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 transform hover:-translate-y-1"
+                className="feature-badge glass-effect px-3 py-2 md:px-4 md:py-3 rounded-full flex items-center justify-center gap-2 text-blue-200 backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 transform hover:-translate-y-1"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="p-1.5 rounded-full bg-blue-900/50 glow">
                   {feature.icon}
                 </div>
-                <span className="text-sm font-medium">{feature.text}</span>
+                <span className="text-xs md:text-sm font-medium">{feature.text}</span>
               </div>
             ))}
           </div>
           
           {/* Glowing button with hover effects */}
-          <div className="animate fade-up transition-all duration-700 z-10 mb-16">
+          <div className="animate fade-up transition-all duration-700 z-10 mb-12 md:mb-16">
             <button 
               onClick={scrollToServices}
-              className="neon-button gradient-border bg-blue-900/80 backdrop-blur-sm text-white px-10 py-4 rounded-full text-lg font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all duration-500 glow hover-transition"
+              className="neon-button gradient-border bg-blue-900/80 backdrop-blur-sm text-white px-8 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all duration-500 glow hover-transition"
               style={{
                 boxShadow: '0 0 20px rgba(59, 130, 246, 0.3), inset 0 0 10px rgba(59, 130, 246, 0.2)'
               }}
             >
               <span className="flex items-center relative">
-                <Zap className="w-6 h-6 mr-3 button-icon" />
+                <Zap className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3 button-icon" />
                 <span className="button-text">Descubrir Soluciones</span>
                 <span className="button-glow"></span>
               </span>
@@ -523,7 +523,7 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col items-center cursor-pointer" onClick={scrollToServices}>
               <span className="text-blue-300 text-sm mb-2 animate-pulse">Descubre Más</span>
               <div className="p-2 rounded-full bg-blue-900/50 border border-blue-500/30 glow">
-                <ChevronDown className="w-8 h-8 text-blue-400 glow animate-bounce" />
+                <ChevronDown className="w-6 h-6 md:w-8 md:h-8 text-blue-400 glow animate-bounce" />
               </div>
             </div>
           </div>
