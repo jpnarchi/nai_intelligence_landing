@@ -190,53 +190,121 @@ function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center stagger-children">
-            <div className="glass-effect p-8 rounded-xl shadow-md transform hover:-translate-y-2 transition-all duration-500 float-animation hologram relative overflow-hidden group">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 stagger-children">
+            {/* Clients Card */}
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group">
+              {/* Background effects */}
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-500/10 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/10 rounded-full blur-3xl"></div>
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-400/10 rounded-full blur-3xl"></div>
               
-              <div className="p-3 rounded-full bg-blue-900/50 border border-blue-500/30 glow mx-auto mb-4">
-                <Users className="w-10 h-10 md:w-12 md:h-12 text-blue-300" />
+              {/* Glowing border */}
+              <div className="absolute inset-0 rounded-xl border border-blue-500/20 glow"></div>
+              
+              {/* Icon with animated glow */}
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
+                <div className="p-4 rounded-full bg-gradient-to-br from-blue-900/80 to-blue-800/80 border border-blue-500/40 glow mx-auto relative z-10 shadow-lg">
+                  <Users className="w-10 h-10 md:w-12 md:h-12 text-blue-300" />
+                </div>
               </div>
-              <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+40</h3>
-              <p className="text-blue-300 uppercase tracking-wider">Clientes</p>
+              
+              {/* Content */}
+              <div className="text-center relative z-10">
+                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+40</h3>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3"></div>
+                <p className="text-blue-300 uppercase tracking-wider font-medium">Clientes</p>
+              </div>
+              
+              {/* Hover effect */}
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
             </div>
             
-            <div className="glass-effect p-8 rounded-xl shadow-md transform hover:-translate-y-2 transition-all duration-500 float-animation hologram relative overflow-hidden group" style={{animationDelay: '1s'}}>
+            {/* Systems Card */}
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group" style={{animationDelay: '0.2s'}}>
+              {/* Background effects */}
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-500/10 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/10 rounded-full blur-3xl"></div>
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-400/10 rounded-full blur-3xl"></div>
               
-              <div className="p-3 rounded-full bg-blue-900/50 border border-blue-500/30 glow mx-auto mb-4">
-                <Settings className="w-10 h-10 md:w-12 md:h-12 text-blue-300 rotate-slow" />
+              {/* Glowing border */}
+              <div className="absolute inset-0 rounded-xl border border-blue-500/20 glow"></div>
+              
+              {/* Icon with animated glow */}
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
+                <div className="p-4 rounded-full bg-gradient-to-br from-blue-900/80 to-blue-800/80 border border-blue-500/40 glow mx-auto relative z-10 shadow-lg">
+                  <Settings className="w-10 h-10 md:w-12 md:h-12 text-blue-300 rotate-slow" />
+                </div>
               </div>
-              <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+15</h3>
-              <p className="text-blue-300 uppercase tracking-wider">Sistemas Automatizados</p>
+              
+              {/* Content */}
+              <div className="text-center relative z-10">
+                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+15</h3>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3"></div>
+                <p className="text-blue-300 uppercase tracking-wider font-medium">Sistemas Automatizados</p>
+              </div>
+              
+              {/* Hover effect */}
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
             </div>
             
-            <div className="glass-effect p-8 rounded-xl shadow-md transform hover:-translate-y-2 transition-all duration-500 float-animation hologram relative overflow-hidden group" style={{animationDelay: '2s'}}>
+            {/* AI Agents Card */}
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group" style={{animationDelay: '0.4s'}}>
+              {/* Background effects */}
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-500/10 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/10 rounded-full blur-3xl"></div>
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-400/10 rounded-full blur-3xl"></div>
               
-              <div className="p-3 rounded-full bg-blue-900/50 border border-blue-500/30 glow mx-auto mb-4">
-                <Brain className="w-10 h-10 md:w-12 md:h-12 text-blue-300 pulse" />
+              {/* Glowing border */}
+              <div className="absolute inset-0 rounded-xl border border-blue-500/20 glow"></div>
+              
+              {/* Icon with animated glow */}
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
+                <div className="p-4 rounded-full bg-gradient-to-br from-blue-900/80 to-blue-800/80 border border-blue-500/40 glow mx-auto relative z-10 shadow-lg">
+                  <Brain className="w-10 h-10 md:w-12 md:h-12 text-blue-300 pulse" />
+                </div>
               </div>
-              <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+20</h3>
-              <p className="text-blue-300 uppercase tracking-wider">Agentes AI</p>
+              
+              {/* Content */}
+              <div className="text-center relative z-10">
+                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+20</h3>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3"></div>
+                <p className="text-blue-300 uppercase tracking-wider font-medium">Agentes AI</p>
+              </div>
+              
+              {/* Hover effect */}
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
             </div>
             
-            <div className="glass-effect p-8 rounded-xl shadow-md transform hover:-translate-y-2 transition-all duration-500 float-animation hologram relative overflow-hidden group" style={{animationDelay: '3s'}}>
+            {/* Chat Bots Card */}
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group" style={{animationDelay: '0.6s'}}>
+              {/* Background effects */}
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-500/10 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/10 rounded-full blur-3xl"></div>
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-400/10 rounded-full blur-3xl"></div>
               
-              <div className="p-3 rounded-full bg-blue-900/50 border border-blue-500/30 glow mx-auto mb-4">
-                <MessageSquare className="w-10 h-10 md:w-12 md:h-12 text-blue-300" />
+              {/* Glowing border */}
+              <div className="absolute inset-0 rounded-xl border border-blue-500/20 glow"></div>
+              
+              {/* Icon with animated glow */}
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
+                <div className="p-4 rounded-full bg-gradient-to-br from-blue-900/80 to-blue-800/80 border border-blue-500/40 glow mx-auto relative z-10 shadow-lg">
+                  <MessageSquare className="w-10 h-10 md:w-12 md:h-12 text-blue-300" />
+                </div>
               </div>
-              <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+10</h3>
-              <p className="text-blue-300 uppercase tracking-wider">Chat Bots</p>
+              
+              {/* Content */}
+              <div className="text-center relative z-10">
+                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+10</h3>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3"></div>
+                <p className="text-blue-300 uppercase tracking-wider font-medium">Chat Bots</p>
+              </div>
+              
+              {/* Hover effect */}
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
             </div>
           </div>
         </div>
