@@ -1,0 +1,275 @@
+/* Visual effects styles */
+
+/* Glow effects */
+.glow {
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));
+}
+
+.glow-text {
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+.glow-border {
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+.hover\:shadow-glow:hover {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.7);
+}
+
+/* Neon effects */
+.neon-text {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #3b82f6,
+    0 0 30px #3b82f6,
+    0 0 40px #3b82f6,
+    0 0 55px #3b82f6,
+    0 0 75px #3b82f6;
+}
+
+.neon-box {
+  box-shadow:
+    0 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #3b82f6,
+    0 0 30px #3b82f6,
+    0 0 40px #3b82f6;
+}
+
+/* Hologram effect */
+.hologram {
+  position: relative;
+  overflow: hidden;
+}
+
+.hologram::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(59, 130, 246, 0.1),
+    rgba(59, 130, 246, 0.2),
+    rgba(59, 130, 246, 0.1),
+    transparent
+  );
+  transform: rotate(30deg);
+  animation: hologram-scan 3s linear infinite;
+}
+
+.hologram-scan {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.2),
+    transparent
+  );
+  animation: hologram-scan-horizontal 3s ease-in-out infinite;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  background: rgba(15, 23, 42, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-effect:hover {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Enhanced backdrop blur */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Text shadow */
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Gradient text */
+.gradient-text-animate {
+  background: linear-gradient(90deg, #60a5fa, #3b82f6, #2563eb, #60a5fa);
+  background-size: 300% 100%;
+  animation: gradient-text-animation 8s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Particles */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  background-color: rgba(147, 197, 253, 0.3);
+  border-radius: 50%;
+}
+
+/* Digital rain */
+.digital-rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.rain-drop {
+  position: absolute;
+  top: -20px;
+  color: rgba(59, 130, 246, 0.7);
+  font-family: monospace;
+  font-size: 14px;
+  text-align: center;
+  user-select: none;
+  animation: rain-fall linear infinite;
+}
+
+.rain-drop > div {
+  opacity: 0;
+  animation: character-fade 0.5s linear infinite;
+}
+
+/* Circuit lines */
+.circuit-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circuit-line {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.7), transparent);
+  height: 1px;
+  animation: circuit-pulse 3s ease-in-out infinite;
+}
+
+.circuit-line.horizontal {
+  height: 1px;
+}
+
+.circuit-line.vertical {
+  width: 1px;
+  background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.7), transparent);
+}
+
+.circuit-node {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(59, 130, 246, 0.7);
+  border-radius: 50%;
+  animation: node-pulse 3s ease-in-out infinite;
+}
+
+/* Floating 3D objects */
+.floating-objects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.floating-object {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  animation: float-object linear infinite;
+}
+
+.floating-object.cube {
+  background-color: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+}
+
+.floating-object.pyramid {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid rgba(59, 130, 246, 0.2);
+}
+
+.floating-object.sphere {
+  border-radius: 50%;
+  background-color: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+}
+
+.floating-object.ring {
+  border-radius: 50%;
+  border: 3px solid rgba(59, 130, 246, 0.5);
+  background-color: transparent;
+}
+
+/* Data streams */
+.data-stream {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+  height: 1px;
+  width: 100%;
+  animation: data-flow 5s linear infinite;
+}
+
+.data-stream.left {
+  top: 30%;
+  left: 0;
+  animation-delay: 0s;
+}
+
+.data-stream.right {
+  top: 70%;
+  right: 0;
+  animation-delay: 2.5s;
+}
+
+.data-stream.top {
+  width: 1px;
+  height: 100%;
+  left: 30%;
+  top: 0;
+  background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+  animation-delay: 1.5s;
+}
+
+.data-stream.bottom {
+  width: 1px;
+  height: 100%;
+  right: 30%;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+  animation-delay: 3.5s;
+}

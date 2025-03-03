@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import all modular style files */
+@import './base.css';
+@import './animations.css';
+@import './effects.css';
+@import './components.css';
+@import './sections/hero.css';
+@import './sections/services.css';
+@import './sections/industries.css';
+@import './sections/contact.css';

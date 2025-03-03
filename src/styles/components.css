@@ -1,0 +1,110 @@
+/* Component-specific styles */
+
+/* Service icon container */
+.service-icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid;
+  background-color: rgba(15, 23, 42, 0.5);
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.service-icon-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(10px);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.service-icon {
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s ease;
+}
+
+/* Service card */
+.service-card {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-features {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.service-features.visible {
+  max-height: 200px;
+  opacity: 1;
+}
+
+/* Service detail icon */
+.service-detail-icon-container {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid;
+  background-color: rgba(15, 23, 42, 0.5);
+  transition: all 0.3s ease;
+}
+
+.service-detail-icon-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(15px);
+  z-index: -1;
+}
+
+/* Industry card */
+.industry-card {
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.industry-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact form */
+.contact-input {
+  background-color: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+  border-color: rgba(59, 130, 246, 0.7);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.contact-button {
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  transform: translateY(-2px);
+}

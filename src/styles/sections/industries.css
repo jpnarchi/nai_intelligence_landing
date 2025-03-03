@@ -1,0 +1,62 @@
+/* Industries section specific styles */
+
+/* Industry card hover effects */
+.industry-item {
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.industry-item:hover {
+  transform: scale(1.1) !important;
+  z-index: 100 !important;
+}
+
+/* Industry carousel */
+.industry-carousel {
+  transform-style: preserve-3d;
+  animation: rotate-carousel 60s linear infinite;
+  will-change: transform;
+}
+
+/* Orbital rings */
+.orbital-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transform-style: preserve-3d;
+}
+
+.orbital-ring-1 {
+  width: 300px;
+  height: 300px;
+  animation: rotate 30s linear infinite;
+}
+
+.orbital-ring-2 {
+  width: 500px;
+  height: 500px;
+  animation: rotate 50s linear reverse infinite;
+}
+
+.orbital-ring-3 {
+  width: 700px;
+  height: 700px;
+  animation: rotate 70s linear infinite;
+}
+
+/* Connection lines */
+.connection-line {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(to right, rgba(59, 130, 246, 0.6), rgba(59, 130, 246, 0));
+  transform-origin: left center;
+  z-index: -1;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.connection-line.active {
+  opacity: 0.8;
+}
