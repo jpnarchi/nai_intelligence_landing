@@ -456,12 +456,14 @@ const HeroSection: React.FC = () => {
             {/* 3D Text with hover effect */}
             <h1 
               ref={titleRef} 
-              className="text-6xl md:text-8xl font-bold text-white transition-all duration-700 transform-gpu title-3d ml-4"
+              className="text-5xl md:text-7xl font-bold text-white transition-all duration-700 transform-gpu title-3d ml-4"
               style={{
                 textShadow: '0 0 20px rgba(59, 130, 246, 0.7), 0 0 40px rgba(59, 130, 246, 0.4)'
               }}
             >
-              <span className="text-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300">NAI Intelligence</span>
+              <span className="text-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300">
+                <span className="inline-block">NAI</span> <span className="inline-block">Intelligence</span>
+              </span>
             </h1>
           </div>
           
@@ -469,7 +471,7 @@ const HeroSection: React.FC = () => {
           <div className="mb-12 w-full max-w-3xl mx-auto">
             <div 
               ref={subtitleRef}
-              className="text-2xl md:text-3xl font-light text-blue-200 fade-in-text glow-text transition-all duration-700"
+              className="text-xl md:text-2xl font-light text-blue-200 fade-in-text glow-text transition-all duration-700"
               style={{
                 textShadow: '0 0 10px rgba(59, 130, 246, 0.5)'
               }}
