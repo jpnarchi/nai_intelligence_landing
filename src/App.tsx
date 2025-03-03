@@ -164,7 +164,7 @@ function App() {
       <Navbar />
       
       {/* Hero Section */}
-      <section id="hero">
+      <section id="hero" className="section-padding">
         <HeroSection />
       </section>
 
@@ -172,17 +172,17 @@ function App() {
       <ServicesSection />
 
       {/* About Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-950 to-blue-900 text-white circuit-pattern transition-all duration-1000 ease-in-out" id="about">
+      <section className="py-16 md:py-20 bg-gradient-to-b from-blue-950 to-blue-900 text-white circuit-pattern transition-all duration-1000 ease-in-out section-padding" id="about">
         <div className="absolute inset-0 circuit-pattern opacity-20 transition-opacity duration-1000"></div>
         <div className="absolute inset-0 cyber-grid opacity-5 transition-opacity duration-1000"></div>
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-400/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
         
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-16 animate fade-up">
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="text-center mb-10 md:mb-16 animate fade-up">
             <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-4 glow-text">Quiénes Somos</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8 glow"></div>
-            <p className="max-w-3xl mx-auto text-lg text-blue-200">
+            <p className="max-w-3xl mx-auto text-base md:text-lg text-blue-200">
               Startup 100% Mexicana <span className="text-blue-300 font-semibold">NAI Intelligence</span> enfocada a ofrecer servicios de 
               <span className="text-blue-300 font-semibold"> Inteligencia Artificial </span> 
               en base a las necesidades del cliente para automatizar su negocio. Donde ofrecemos una amplia gama de soluciones 
@@ -190,9 +190,9 @@ function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 stagger-children">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 stagger-children">
             {/* Clients Card */}
-            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group">
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group about-card">
               {/* Background effects */}
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -202,7 +202,7 @@ function App() {
               <div className="absolute inset-0 rounded-xl border border-blue-500/20 glow"></div>
               
               {/* Icon with animated glow */}
-              <div className="relative mb-6">
+              <div className="relative mb-6 about-card-icon">
                 <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
                 <div className="p-4 rounded-full bg-gradient-to-br from-blue-900/80 to-blue-800/80 border border-blue-500/40 glow mx-auto relative z-10 shadow-lg">
                   <Users className="w-10 h-10 md:w-12 md:h-12 text-blue-300" />
@@ -211,8 +211,8 @@ function App() {
               
               {/* Content */}
               <div className="text-center relative z-10">
-                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+40</h3>
-                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3"></div>
+                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 about-card-number">+40</h3>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3 about-card-divider"></div>
                 <p className="text-blue-300 uppercase tracking-wider font-medium">Clientes</p>
               </div>
               
@@ -221,7 +221,7 @@ function App() {
             </div>
             
             {/* Systems Card */}
-            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group" style={{animationDelay: '0.2s'}}>
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group about-card" style={{animationDelay: '0.2s'}}>
               {/* Background effects */}
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -231,7 +231,7 @@ function App() {
               <div className="absolute inset-0 rounded-xl border border-blue-500/20 glow"></div>
               
               {/* Icon with animated glow */}
-              <div className="relative mb-6">
+              <div className="relative mb-6 about-card-icon">
                 <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
                 <div className="p-4 rounded-full bg-gradient-to-br from-blue-900/80 to-blue-800/80 border border-blue-500/40 glow mx-auto relative z-10 shadow-lg">
                   <Settings className="w-10 h-10 md:w-12 md:h-12 text-blue-300 rotate-slow" />
@@ -240,8 +240,8 @@ function App() {
               
               {/* Content */}
               <div className="text-center relative z-10">
-                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+15</h3>
-                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3"></div>
+                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 about-card-number">+15</h3>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3 about-card-divider"></div>
                 <p className="text-blue-300 uppercase tracking-wider font-medium">Sistemas Automatizados</p>
               </div>
               
@@ -250,7 +250,7 @@ function App() {
             </div>
             
             {/* AI Agents Card */}
-            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group" style={{animationDelay: '0.4s'}}>
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group about-card" style={{animationDelay: '0.4s'}}>
               {/* Background effects */}
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -260,7 +260,7 @@ function App() {
               <div className="absolute inset-0 rounded-xl border border-blue-500/20 glow"></div>
               
               {/* Icon with animated glow */}
-              <div className="relative mb-6">
+              <div className="relative mb-6 about-card-icon">
                 <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
                 <div className="p-4 rounded-full bg-gradient-to-br from-blue-900/80 to-blue-800/80 border border-blue-500/40 glow mx-auto relative z-10 shadow-lg">
                   <Brain className="w-10 h-10 md:w-12 md:h-12 text-blue-300 pulse" />
@@ -269,8 +269,8 @@ function App() {
               
               {/* Content */}
               <div className="text-center relative z-10">
-                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+20</h3>
-                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3"></div>
+                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 about-card-number">+20</h3>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3 about-card-divider"></div>
                 <p className="text-blue-300 uppercase tracking-wider font-medium">Agentes AI</p>
               </div>
               
@@ -279,7 +279,7 @@ function App() {
             </div>
             
             {/* Chat Bots Card */}
-            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group" style={{animationDelay: '0.6s'}}>
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-xl transform hover:-translate-y-3 transition-all duration-500 hover:shadow-glow relative overflow-hidden group about-card" style={{animationDelay: '0.6s'}}>
               {/* Background effects */}
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -289,7 +289,7 @@ function App() {
               <div className="absolute inset-0 rounded-xl border border-blue-500/20 glow"></div>
               
               {/* Icon with animated glow */}
-              <div className="relative mb-6">
+              <div className="relative mb-6 about-card-icon">
                 <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
                 <div className="p-4 rounded-full bg-gradient-to-br from-blue-900/80 to-blue-800/80 border border-blue-500/40 glow mx-auto relative z-10 shadow-lg">
                   <MessageSquare className="w-10 h-10 md:w-12 md:h-12 text-blue-300" />
@@ -298,8 +298,8 @@ function App() {
               
               {/* Content */}
               <div className="text-center relative z-10">
-                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2">+10</h3>
-                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3"></div>
+                <h3 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-2 about-card-number">+10</h3>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500/50 to-transparent mx-auto mb-3 about-card-divider"></div>
                 <p className="text-blue-300 uppercase tracking-wider font-medium">Chat Bots</p>
               </div>
               
@@ -314,14 +314,14 @@ function App() {
       <IndustriesSection />
 
       {/* Mission & Vision Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white circuit-pattern transition-all duration-1000 ease-in-out" id="mission">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white circuit-pattern transition-all duration-1000 ease-in-out section-padding" id="mission">
         <div className="absolute inset-0 cyber-grid opacity-5"></div>
         <div className="absolute inset-0 circuit-pattern opacity-20"></div>
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-400/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
         
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div className="animate fade-right glass-effect p-8 rounded-xl backdrop-blur-md relative overflow-hidden group">
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -350,15 +350,15 @@ function App() {
       </section>
 
       {/* Success Cases Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-900 to-blue-950 circuit-pattern transition-all duration-1000 ease-in-out" id="success-cases">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16 animate fade-up">
+      <section className="py-16 md:py-20 bg-gradient-to-b from-blue-900 to-blue-950 circuit-pattern transition-all duration-1000 ease-in-out section-padding" id="success-cases">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-10 md:mb-16 animate fade-up">
             <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-4">Casos de Éxito</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8 glow"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 stagger-children">
-            <div className="glass-effect p-8 rounded-xl shadow-lg scale-transition backdrop-blur-md relative overflow-hidden group">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 stagger-children">
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-lg scale-transition backdrop-blur-md relative overflow-hidden group">
               {/* Empresa destacada con efecto de brillo */}
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/20 rounded-full blur-3xl"></div>
@@ -385,7 +385,7 @@ function App() {
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
             </div>
             
-            <div className="glass-effect p-8 rounded-xl shadow-lg scale-transition backdrop-blur-md relative overflow-hidden group">
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-lg scale-transition backdrop-blur-md relative overflow-hidden group">
               {/* Empresa destacada con efecto de brillo */}
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/20 rounded-full blur-3xl"></div>
@@ -411,7 +411,7 @@ function App() {
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
             </div>
             
-            <div className="glass-effect p-8 rounded-xl shadow-lg scale-transition backdrop-blur-md relative overflow-hidden group">
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-lg scale-transition backdrop-blur-md relative overflow-hidden group">
               {/* Empresa destacada con efecto de brillo */}
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/20 rounded-full blur-3xl"></div>
@@ -437,7 +437,7 @@ function App() {
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
             </div>
             
-            <div className="glass-effect p-8 rounded-xl shadow-lg scale-transition backdrop-blur-md relative overflow-hidden group">
+            <div className="glass-effect p-6 md:p-8 rounded-xl shadow-lg scale-transition backdrop-blur-md relative overflow-hidden group">
               {/* Empresa destacada con efecto de brillo */}
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-400/20 rounded-full blur-3xl"></div>
@@ -467,7 +467,7 @@ function App() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-900 to-blue-950 relative overflow-hidden transition-all duration-1000 ease-in-out" id="contact">
+      <section className="py-16 md:py-20 bg-gradient-to-b from-blue-900 to-blue-950 relative overflow-hidden transition-all duration-1000 ease-in-out section-padding" id="contact">
         {/* Animated background elements */}
         <div className="absolute inset-0 cyber-grid opacity-5"></div>
         <div className="absolute inset-0 circuit-pattern opacity-20"></div>
@@ -477,23 +477,23 @@ function App() {
         <div className="absolute bottom-20 left-10 w-32 h-32 bg-blue-400/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1.5s'}}></div>
         <div className="absolute top-1/3 left-1/4 w-24 h-24 bg-blue-600/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2.5s'}}></div>
         
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-16 animate fade-up">
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="text-center mb-10 md:mb-16 animate fade-up">
             <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 mb-4">Contáctanos</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8 glow"></div>
-            <p className="max-w-2xl mx-auto text-lg text-blue-200 mb-10">
+            <p className="max-w-2xl mx-auto text-base md:text-lg text-blue-200 mb-6 md:mb-10">
               Estamos listos para ayudarte a transformar tu negocio con soluciones de IA personalizadas
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="glass-effect p-8 md:p-12 rounded-2xl shadow-xl animate fade-up backdrop-blur-md relative overflow-hidden">
+            <div className="glass-effect p-6 md:p-12 rounded-2xl shadow-xl animate fade-up backdrop-blur-md relative overflow-hidden">
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-500/5 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-400/5 rounded-full blur-3xl"></div>
               <div className="absolute inset-0 hologram-scan opacity-10 rounded-xl"></div>
               
               <form onSubmit={handleSubmit} className="relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                       <User className="h-5 w-5 text-blue-300" />
@@ -560,7 +560,7 @@ function App() {
                   <button
                     type="submit"
                     disabled={formStatus === 'submitting'}
-                    className="neon-button gradient-border bg-blue-900/80 backdrop-blur-sm text-white px-10 py-4 rounded-full text-lg font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all duration-500 glow hover-transition"
+                    className="neon-button gradient-border bg-blue-900/80 backdrop-blur-sm text-white px-8 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all duration-500 glow hover-transition"
                     style={{
                       boxShadow: '0 0 20px rgba(59, 130, 246, 0.3), inset 0 0 10px rgba(59, 130, 246, 0.2)'
                     }}
@@ -603,7 +603,7 @@ function App() {
                 )}
               </form>
               
-              <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 text-center md:text-left stagger-children">
+              <div className="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-center md:text-left stagger-children">
                 <div className="flex flex-col md:flex-row items-center md:items-start">
                   <div className="bg-blue-800/30 p-3 rounded-full mb-4 md:mb-0 md:mr-4 glow">
                     <Mail className="w-6 h-6 text-blue-300" />
@@ -630,8 +630,8 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-10 bg-gradient-to-r from-blue-950 to-blue-900 text-white transition-all duration-1000 ease-in-out">
-        <div className="container mx-auto px-6">
+      <footer className="py-8 md:py-10 bg-gradient-to-r from-blue-950 to-blue-900 text-white transition-all duration-1000 ease-in-out">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-6 md:mb-0">
               <Brain className="w-8 h-8 text-blue-300 mr-2 glow-pulse" />
